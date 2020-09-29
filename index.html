@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>semantic html</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <li>then tell it to your best friend</li>
     </ul>
     <h2>The story</h2>
-    <p>Once upon a time there was a Chinese farmer whose horse ran away.
+    <p id="firstParagraph">Once upon a time there was a Chinese farmer whose horse ran away.
         That evening, all of his neighbors came around to commiserate.
         They said, “We are so sorry to hear your horse has run away.
         This is most unfortunate.” The farmer said, “Maybe.”
@@ -31,49 +32,53 @@
     <p>
         The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his
         leg.
-        The neighbors then said, “Oh dear, that’s too bad,” and the farmer responded, “Maybe.”
+        The neighbors then said, “Oh dear, that’s too <span class="bad">bad</span>,” and the farmer responded, “Maybe.”
         The next day the conscription officers came around to conscript people into the army, and they rejected his son
         because he had a broken leg.
         Again all the neighbors came around and said, “Isn’t that great!” Again, he said, “Maybe.”
     </p>
-    <p class="good bad">
+    <p>
         The whole process of nature is an integrated process of immense complexity,
         and it’s really impossible to tell whether anything that happens
-        in it is good or bad — because you never know what will be the consequence of
-        the misfortune; or, you never know what will be the consequences of good fortune.
+        in it is <span class="good">good</span> or <span class="bad">bad</span> — because you never know what will be the consequence of
+        the misfortune; or, you never know what will be the consequences of <span class="good">good</span> fortune.
     </p>
-    <q>Alan Watts</q>
-    <table class="good bad">
+    <blockquote>Alan Watts</blockquote>
+    <table>
         <caption>Here is this dialog in the form of a table</caption>
         <tr>
             <td>Event </td>
-            <td>Good or Bad ?</td>
+            <td><span class="good">good</span> or <span class="bad">Bad</span> ?</td>
         </tr>
         <tr>
-            <td>Lose a horse </td>
-            <td> <em>Maybe</em></td>
+            <td class="villagers">Lose a horse </td>
+            <td class="farmer"> <em>Maybe</em></td>
         </tr>
         <tr>
-            <td>Win more horses </td>
-            <td><em>Maybe</em></td>
+            <td class="villagers">Win more horses </td>
+            <td class="farmer"><em>Maybe</em></td>
         </tr>
         <tr>
-            <td>Son injury </td>
-            <td><em>Maybe</em></td>
+            <td class="villagers">Son injury </td>
+            <td class="farmer"><em>Maybe</em></td>
         </tr>
         <tr>
-            <td>Avoid war</td>
-            <td><em>Maybe</em></td>
+            <td class="villagers">Avoid war</td>
+            <td class="farmer"><em>Maybe</em></td>
         </tr>
     </table>
     <blockquote>Table representing the farmer's philosophy.</blockquote>
     <h3>Conclusion</h3>
-    <p class="good bad">Good and Bad are just one perspective. Bananas are good for monkeys,
-        but monkeys are not good for bananas. Let's not make a big deal out of it...
+    <p><span class="good">Good</span> and <span class="bad">Bad</span> are just one perspective. Bananas are <span class="good">good</span> for monkeys,
+        but monkeys are not <span class="good">good</span> for bananas. Let's not make a big deal out of it...
     </p>
-    <a href="https://www.w3schools.com/tags/tag_caption.asp" target="Blanck_">caption tag</a>
-    <a href="https://www.w3schools.com/tags/tag_blockquote.asp" target="Blanck_">blockquote tag</a>
-    <a href="https://www.w3schools.com/tags/tag_q.asp" target="Blanck_">q tag</a>
+    <ul>
+        <li> <a href="https://www.w3schools.com/tags/tag_caption.asp" title="when use the caption tag"
+                target="Blanck_">caption tag</a></li>
+        <li><a href="https://www.w3schools.com/tags/tag_blockquote.asp" title="when use the blockquote tag"
+                target="Blanck_">blockquote tag</a></li>
+        <li><a href="https://www.w3schools.com/tags/tag_q.asp" title="when use q tag" target="Blanck_">q tag</a></li>
+    </ul>
     <footer>Copyright Just Another Company 2017. All right reserved. Adapted from this article:
         https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/</footer>
 </body>

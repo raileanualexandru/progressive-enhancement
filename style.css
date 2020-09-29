@@ -1,0 +1,81 @@
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(68, 55, 14);
+    font-size:1.3em;
+    word-spacing: 4px;
+}
+a{
+    font-size:1.3em;
+
+}
+ /* unvisited link */
+ a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(44, 157, 185);
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  } 
+  body{
+      max-width: 90%;
+      margin:auto;
+      background: -webkit-linear-gradient(90deg, rgb(181, 241, 140), rgb(58, 113, 169));
+      background: linear-gradient(90deg, rgb(181, 241, 140), rgb(58, 113, 169));
+      /*background-image: url(body3.jpg);
+      background-repeat:no-repeat;
+      background-position: bottom right;
+      background-size:cover; */
+  }
+  blockquote{
+      max-width: 50%;
+      margin:80px auto 80px auto;
+      font-size:160%;
+      background-color: rgb(175, 170, 170);
+      border-left:3px solid rgb(211, 110, 63);
+      padding-left: 30px;
+      font-style:italic;
+      
+  }
+  .villagers{
+      border-left: 3px solid green;
+  }
+  .farmer{
+      border-left: 3px solid red;
+  }
+  header > h1{
+      background-color: yellow;
+  }
+  .good{
+      text-transform: capitalize;
+      color:green;
+  }
+  .bad{
+      text-transform: capitalize;
+      color:red;
+  }
+  tr:nth-child(odd){
+      background-color: rgb(204, 199, 199);
+  }
+  tr:nth-child(even){
+      background-color: white;
+  }
+  #firstParagraph{
+      font-weight: bold;
+  }
+  img{
+      width:60%;
+      margin-right: 50px;
+      margin-bottom: 15px;
+      float:left;
+  }
